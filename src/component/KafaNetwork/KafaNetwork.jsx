@@ -7,7 +7,7 @@ function KafaNetwork({mode}) {
     <Container maxWidth="lg" sx={{pt:"40px"}}>
     <Grid container spacing={10}>
     <Grid item xs={12} md={6}>
-      <Typography variant="h1">PRESALE.KAFA.NETWORK</Typography>
+      <Typography variant="h1">KAFA.NETWORK</Typography>
       <Typography variant="h1">Grow More Than Coffee with KAFA</Typography>
       <Box
         sx={{

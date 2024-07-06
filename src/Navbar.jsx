@@ -11,6 +11,7 @@ import {
   Stack,
   SwipeableDrawer,
   Toolbar,
+  Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
@@ -66,20 +67,27 @@ const Navbar = ({ themeToggler, mode }) => {
         >
           <img src={mode ? logo1 : logo} alt="logo" style={{ width: "50px" }} />
         </ListItemButton>
-        <ListItemButton
-          to="/"
-          sx={{
-            color: mode ? "#000" : "#fff",
-            fontFamily: ["Open Sans Variable", "sans-serif"].join(","),
-            fontSize: "15px",
-            fontWeight: "bold",
-            "&:hover": {
-              color: "#E0F7FA",
-            },
-          }}
-          component={NavLink}
-        >
-          presale
+        <ListItemButton>
+          <a
+            href="https://presale.kafa.network/"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Typography
+              sx={{
+                color: mode ? "#000" : "#fff",
+                fontFamily: ["Open Sans Variable", "sans-serif"].join(","),
+                textTransform: "uppercase",
+                fontSize: "15px",
+                fontWeight: "bold",
+                "&:hover": {
+                  color: "#E0F7FA",
+                },
+              }}
+            >
+              Presale
+            </Typography>
+          </a>
         </ListItemButton>
         <ListItemButton
           to="/RoadMap"
@@ -98,11 +106,10 @@ const Navbar = ({ themeToggler, mode }) => {
           RoadMap
         </ListItemButton>
         <ListItemButton
-          to="/Staking"
+          to="/"
           sx={{
             color: mode ? "#000" : "#fff",
             fontFamily: ["Open Sans Variable", "sans-serif"].join(","),
-            textTransform: "uppercase",
             fontSize: "15px",
             fontWeight: "bold",
             "&:hover": {
@@ -112,6 +119,28 @@ const Navbar = ({ themeToggler, mode }) => {
           component={NavLink}
         >
           Staking
+        </ListItemButton>
+        <ListItemButton>
+          <a
+            href="https://docs.kafa.network/docs.pdf"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <Typography
+              sx={{
+                color: mode ? "#000" : "#fff",
+                fontFamily: ["Open Sans Variable", "sans-serif"].join(","),
+                textTransform: "uppercase",
+                fontSize: "15px",
+                fontWeight: "bold",
+                "&:hover": {
+                  color: "#E0F7FA",
+                },
+              }}
+            >
+              Audit
+            </Typography>
+          </a>
         </ListItemButton>
         <Button
           onClick={themeToggler}
@@ -170,23 +199,29 @@ const Navbar = ({ themeToggler, mode }) => {
                   alignItems="center"
                   gap={1}
                 >
-                  <ListItemButton
-                    to="/"
-                    sx={{
-                      color: mode ? "#000" : "#fff",
-                      fontFamily: ["Open Sans Variable", "sans-serif"].join(
-                        ","
-                      ),
-                      textTransform: "uppercase",
-                      fontSize: "15px",
-                      fontWeight: "bold",
-                      "&:hover": {
-                        color: "#E0F7FA",
-                      },
-                    }}
-                    component={NavLink}
-                  >
-                    presale
+                  <ListItemButton>
+                    <a
+                      href="https://presale.kafa.network/"
+                      target="_blank"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Typography
+                        sx={{
+                          color: mode ? "#000" : "#fff",
+                          fontFamily: ["Open Sans Variable", "sans-serif"].join(
+                            ","
+                          ),
+                          textTransform: "uppercase",
+                          fontSize: "15px",
+                          fontWeight: "bold",
+                          "&:hover": {
+                            color: "#E0F7FA",
+                          },
+                        }}
+                      >
+                        Presale
+                      </Typography>
+                    </a>
                   </ListItemButton>
 
                   <ListItemButton
@@ -208,13 +243,12 @@ const Navbar = ({ themeToggler, mode }) => {
                     RoadMap
                   </ListItemButton>
                   <ListItemButton
-                    to="/Staking"
+                    to="/"
                     sx={{
                       color: mode ? "#000" : "#fff",
                       fontFamily: ["Open Sans Variable", "sans-serif"].join(
                         ","
                       ),
-                      textTransform: "uppercase",
                       fontSize: "15px",
                       fontWeight: "bold",
                       "&:hover": {
@@ -225,7 +259,30 @@ const Navbar = ({ themeToggler, mode }) => {
                   >
                     Staking
                   </ListItemButton>
-
+                  <ListItemButton>
+                    <a
+                      href="https://docs.kafa.network/docs.pdf"
+                      target="_blank"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Typography
+                        sx={{
+                          color: mode ? "#000" : "#fff",
+                          fontFamily: ["Open Sans Variable", "sans-serif"].join(
+                            ","
+                          ),
+                          textTransform: "uppercase",
+                          fontSize: "15px",
+                          fontWeight: "bold",
+                          "&:hover": {
+                            color: "#E0F7FA",
+                          },
+                        }}
+                      >
+                        Audit
+                      </Typography>
+                    </a>
+                  </ListItemButton>
                   <Button
                     onClick={themeToggler}
                     sx={{

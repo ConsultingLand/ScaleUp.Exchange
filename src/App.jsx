@@ -41,7 +41,7 @@ function App() {
               </>
             }
           /> */}
-          {/* <Route
+          <Route
             path="/RoadMap"
             element={
               <>
@@ -57,7 +57,7 @@ function App() {
                 </Box>
               </>
             }
-          /> */}
+          />
           <Route
             path="/"
             element={
@@ -69,7 +69,9 @@ function App() {
                   }}
                 >
                   <Navbar mode={mode} themeToggler={themeToggler} />
+                  <KafaNetwork mode={mode} themeToggler={themeToggler} />
                   <Staking mode={mode} themeToggler={themeToggler} />
+                  <RoadMap mode={mode} themeToggler={themeToggler} />
                   <Footer mode={mode} themeToggler={themeToggler} />
                 </Box>
               </>

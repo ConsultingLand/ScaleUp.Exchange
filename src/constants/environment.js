@@ -6,7 +6,7 @@ import { http, createConfig } from "@wagmi/core";
 import { bscTestnet } from "@wagmi/core/chains";
 
 export const presaleContract = {
-  address: "0x7b1C3D242890fe3ED4b2100FdA04Dd6151b2cdb2", //testnet
+  address: "0x19C8A68d0EC47FcbECB7c79d6e99308598eE2A23", //testnet
   abi: presaleAbi,
 };
 export const airdropContract = {
@@ -15,7 +15,7 @@ export const airdropContract = {
 };
 
 export const kafaStaking = {
-  address: "0x601b429efd5b58aAEC4A954e67019fD346e5874A", //testnet
+  address: "0xc20c53FeC0714834b771eA96354Df7C8e18A96Ed", //testnet
   abi: stakingAbi,
 };
 
@@ -24,7 +24,7 @@ export const usdtContract = {
   abi: tokenAbi,
 };
 export const tokenContract = {
-  address: "0xc69c688048F6422ABb4441C01C4B5b4DBE4B5Af3", //testnet
+  address: "0x2cCE9d4cC6612D1775bB6Ff2a9f989c788b895f6", //testnet
   abi: tokenAbi,
 };
 
@@ -36,7 +36,7 @@ export const config = createConfig({
 });
 
 export const bscUrl = "https://testnet.bscscan.com/address/";
-export const ActiveChain = 97;
+export const ActiveChain = 137;
 export let getSliceAddress = (address) =>
   address?.slice(0, 4) + "..." + address?.slice(-4);
 export const getCommas = (value, percision = 2) => {

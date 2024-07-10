@@ -1,11 +1,5 @@
 [
-  {
-    "inputs": [
-      { "internalType": "address", "name": "_token", "type": "address" }
-    ],
-    "stateMutability": "nonpayable",
-    "type": "constructor"
-  },
+  { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
   {
     "anonymous": false,
     "inputs": [
@@ -30,7 +24,7 @@
     "inputs": [
       {
         "indexed": false,
-        "internalType": "enum KAFAPresale.SalePhase",
+        "internalType": "enum KAFAPRESALE.SalePhase",
         "name": "newPhase",
         "type": "uint8"
       }
@@ -102,7 +96,7 @@
   {
     "inputs": [
       {
-        "internalType": "enum KAFAPresale.SalePhase",
+        "internalType": "enum KAFAPRESALE.SalePhase",
         "name": "_phase",
         "type": "uint8"
       }
@@ -124,7 +118,7 @@
     "name": "getActivePhase",
     "outputs": [
       {
-        "internalType": "enum KAFAPresale.SalePhase",
+        "internalType": "enum KAFAPRESALE.SalePhase",
         "name": "",
         "type": "uint8"
       }
@@ -135,7 +129,7 @@
   {
     "inputs": [
       {
-        "internalType": "enum KAFAPresale.SalePhase",
+        "internalType": "enum KAFAPRESALE.SalePhase",
         "name": "_phase",
         "type": "uint8"
       }
@@ -180,7 +174,7 @@
   {
     "inputs": [
       {
-        "internalType": "enum KAFAPresale.SalePhase",
+        "internalType": "enum KAFAPRESALE.SalePhase",
         "name": "_phase",
         "type": "uint8"
       }
@@ -193,7 +187,7 @@
   {
     "inputs": [
       {
-        "internalType": "enum KAFAPresale.SalePhase",
+        "internalType": "enum KAFAPRESALE.SalePhase",
         "name": "_phase",
         "type": "uint8"
       },
@@ -207,7 +201,7 @@
   {
     "inputs": [
       {
-        "internalType": "enum KAFAPresale.SalePhase",
+        "internalType": "enum KAFAPRESALE.SalePhase",
         "name": "_phase",
         "type": "uint8"
       },
